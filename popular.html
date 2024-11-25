@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The most popular flowers for you</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .top-section {
+            background: linear-gradient(to right, #e69c9c 0%, #722624 100%);
+            height: 70%;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #FDF4D4;
+            clip-path: polygon(0% 70%, 25% 85%, 50% 70%, 75% 85%, 100% 70%, 100% 100%, 0% 100%);
+        }
+        .title {
+            color: #ffffffd0;
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .buttons-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #dd6b6b;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #c54364;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .flower-card {
+            background-color: rgb(252, 180, 180);
+            border: 1px solid #7e4b4b;
+            border-radius: 5px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .flower-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #8f1f1f;
+        }
+        .flower-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .flower-card p {
+            padding: 0 15px;
+            font-size: 0.9em;
+            color: #000000;
+        }
+        .flower-card button {
+            background-color: #b82121;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .flower-card button:hover {
+            background-color: #7a1f1f;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <h1 class="title">The most popular flowers for you</h1>
+        <div class="buttons-container">
+            <a href="index.html" class="button">Main Web</a>
+            <a href="https://www.facebook.com/kvetinybellis/" class="button">Real Website</a>
+            <a href="https://www.bing.com/search?pglt=43&q=flowers+images&cvid=49df8aea9e6643e598636894060eeb79&gs_lcrp=EgRlZGdlKgYIAxAAGEAyBwgAEAAY-QcyBggBEEUYOTIGCAIQABhAMgYIAxAAGEAyBggEEC4YQDIGCAUQABhAMgYIBhBFGDwyBggHEEUYPDIGCAgQRRg8MggICRDpBxj8VdIBCDU2NjRqMGoxqAIAsAIB&FORM=ANNAB1&DAF0=1&PC=U531" class="button">Flower Images</a>
+        </div>
+        <div class="wave"></div>
+    </div>
+    <div class="container">
+
+        <div class="flower-card">
+            <img src="rose.jpg" alt="Rose">
+            <h3>Rose</h3>
+            <p>A timeless symbol of love and elegance, perfect for any romantic occasion.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="lily.jpg" alt="Lily">
+            <h3>Lily</h3>
+            <p>Elegant and fragrant, lilies represent purity and refined beauty.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="tulip.jpg" alt="Tulip">
+            <h3>Tulip</h3>
+            <p>Bright and cheerful, tulips are ideal for adding a splash of color to any room.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="orhid.jpg" alt="Orchid">
+            <h3>Orchid</h3>
+            <p>Orchids convey delicate beauty and are perfect for creating an exotic touch.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="daisy.jpg" alt="Daisy">
+            <h3>Daisy</h3>
+            <p>Daisies symbolize innocence and simplicity, perfect for a light, joyful gift.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="sun.jpg" alt="Sunflower">
+            <h3>Sunflower</h3>
+            <p>Bold and sunny, sunflowers bring warmth and positivity into any space.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="hydrangea.jpg" alt="Hydrangea">
+            <h3>Hydrangea</h3>
+            <p>Known for their lush clusters, hydrangeas are perfect for creating full, beautiful arrangements.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="carnatation.jpg" alt="Carnation">
+            <h3>Carnation</h3>
+            <p>Symbolizing fascination and distinction, carnations come in a variety of vibrant colors.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="peony.jpg" alt="Peony">
+            <h3>Peony</h3>
+            <p>Peonies are lush, fragrant, and perfect for adding a touch of luxury to any bouquet.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+        <div class="flower-card">
+            <img src="iris.jpg" alt="Iris">
+            <h3>Iris</h3>
+            <p>The iris, with its regal purple hues, symbolizes hope and wisdom.</p>
+            <button>Add to Cart</button>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
